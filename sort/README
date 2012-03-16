@@ -3,5 +3,7 @@ cmake .
 make
 
   RUN:
-./sort
+./qsort
+./heap_sort
+./insertions_sort
 
