@@ -1,0 +1,7 @@
+  BUILD:
+cmake .
+make
+
+  RUN:
+./sort
+
