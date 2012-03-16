@@ -122,16 +122,14 @@ void insertion_sort(TIter begin, TIter end) {
   }
 }
 
-
 int main() {
-
   std::vector<ulong> data;
 
   init_data(data, DATA_SIZE, ALPHA);
 
  // qsort(data.begin(), data.end());
   heap_sort(data, data.size());
- // insertion_sort(data.begin(), data.end());
+ // insertion_sort(data.begin(), data.end());  // To long to wait for. O(n^2) complexity
 
   std::ofstream os("outfile.txt");
   print_result(os, data);
