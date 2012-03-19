@@ -1,9 +1,0 @@
-add_executable(qsort
-  qsort.cpp  
-)
-add_executable(heap_sort
-  heap_sort.cpp  
-)
-add_executable(insertions_sort
-  insertions_sort.cpp  
-)
