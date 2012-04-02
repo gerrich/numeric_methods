@@ -1,8 +1,8 @@
 CC=g++
 
 all:
-	${CC} -o test test.cpp
-	${CC} -o exp_test exp_test.cpp
+	${CC} -o calc calc.cpp
+	${CC} -o pi pi.cpp
 
 clear:
-	rm test exp_test
+	rm calc pi
