@@ -15,7 +15,7 @@ class Function {
 public:
   TData operator()(const std::vector<TData> &data) const {
     return std::exp((data[0] * data[1] + data[1] * data[2] + data[2] * data[0]) / 2.0) *
-        std::exp((pow2(data[0]) * data[1] + pow2(data[1]) * data[2] + pow2(data[2]) * data[0] + data[0] * data[1] + data[2]) / 2.0) *
+        std::exp((pow2(data[0]) * data[1] + pow2(data[1]) * data[2] + pow2(data[2]) * data[0] + data[0] * data[1] * data[2]) / 2.0) *
         std::log(1.0 + data[0] + data[1] + data[2] + std::log(1.0 + pow2(data[0]) + pow2(data[1]) + pow2(data[2])));
   }
 };
